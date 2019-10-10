@@ -50,31 +50,64 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="cart.html">Shopping Cart</a>
+                            <!-- Shopping Cart -->
+                            <div class="d-flex flex-row-reverse">
+                                <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown"> Shopping Cart<span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <section class="container content-section">
+                                            <h2 class="section-header">CART</h2>
+                                            <div class="cart-row">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4">
+                                                            <span class="cart-item cart-header cart-column">ITEM</span>
+                                                    </div>
+                                                    <div class="col-6 col-md-4">
+                                                            <span class="cart-price cart-header cart-column">PRICE</span>
+                                                    </div>
+                                                    <div class="col-6 col-md-4">
+                                                            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                                                    </div>
+                                                </div>                                
+                                                
+                                            </div>
+                                            <div class="cart-items">   
+                                            </div>
+                                            <div class="cart-total">
+                                                <strong class="cart-total-title">Total</strong>
+                                                <span class="cart-total-price">$0</span>
+                                            </div>
+                                        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                                    </section>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Products -->
+        <br>
         <div class="container">
 
-            <h3 class="h3">Tree Product Demo </h3>
+            <h3 class="h3">PlantATree Products </h3>
 
             <form>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="pics_in_a_row">
-                            <div class="img1">
-                                <img src="images/Turkish Fir.jpg" alt="">
-                                <p class="text-center">Turkish Fir ($29.99)</p>
-
-                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
-                                    Tree Info
-                                </button>
-                                <button type="button" class="btn btn-secondary">
-                                    Add to cart
-                                </button>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img src="images/Turkish Fir.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Turkish Tree</span>
+                                <span class="shop-item-price">$29.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
 
                                 <!-- Modal -->
                                     <div class="modal fade" id="TurkishFir" tabindex="-1" role="dialog"
@@ -101,22 +134,27 @@
                                     </div>
                                 </div>
                             </div>
+                            <div>
+
+                            </div>
                         </div>
                     </div>
 
                     <!-- New Product -->
                     <div class="col-md-3">
-                        <div class="pics_in_a_row">
-                            <div class="img1">
-                                <img src="images/Autumn Blaze.jpg" alt="">
-                                <p class="text-center">Autumn Blaze (Maple) ($22.99)</p>
-
-                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#autmumnModal">
-                                    Tree Info
-                                </button>
-                                <button type="button" class="btn btn-secondary">
-                                    Add to cart
-                                </button>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img src="images/Autumn Blaze.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Autmun Blaze</span>
+                                <span class="shop-item-price">$22.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
 
                                 <!-- Modal -->
                                     <div class="modal fade" id="autmumnModal" tabindex="-1" role="dialog"
@@ -150,15 +188,17 @@
                     <div class="col-md-3">
                         <div class="pics_in_a_row">
                             <div class="img1">
-                                <img src="images/Acacia Pravissima.jpg" alt="">
-                                <p class="text-center">Acacia Pravissma ($19.99)</p>
-
-                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#Acacia">
-                                    Tree Info
-                                </button>
-                                <button type="button" class="btn btn-secondary">
-                                    Add to cart
-                                </button>
+                                <img src="images/Acacia Pravissima.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Acacia Pravissima</span>
+                                <span class="shop-item-price">$19.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
 
                                 <!-- Modal -->
                                     <div class="modal fade" id="Acacia" tabindex="-1" role="dialog"
@@ -192,15 +232,17 @@
                      <div class="col-md-3">
                         <div class="pics_in_a_row">
                             <div class="img1">
-                                <img src="images/Abies Vejari.jpg" alt="">
-                                <p class="text-center">Abies Vejari ($19.99)</p>
-
-                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
-                                    Tree Info
-                                </button>
-                                <button type="button" class="btn btn-secondary">
-                                    Add to cart
-                                </button>
+                                <img src="images/Abies Vejari.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Abies Vejari</span>
+                                <span class="shop-item-price">$15.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
 
                                 <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -235,36 +277,7 @@
                 </div>
             </form>
         </div>
-        <br><br>
-        <section class="container content-section">
-                <h2 class="section-header">CART</h2>
-                <div class="cart-row">
-                    <span class="cart-item cart-header cart-column">ITEM</span>
-                    <span class="cart-price cart-header cart-column">PRICE</span>
-                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                </div>
-                <div class="cart-items">
-                    <div class="cart-row">
-                        <div class="cart-item cart-column" style="height: 100px; width: 100px">
-                            <img src="images/Turkish Fir.jpg" alt="" class="cart-item-image" width="100%" height="100%">
-                        </div>
-                        <span class="cart-item-title">Turkish Fir</span>
-                        <span class="cart-price cart-column">$29.99</span>
-                        <div class="cart-quantity cart-column">
-                            <input type="number" class="cart-quantity-input" value="1">
-                            <button class="btn btn-dark"> REMOVE </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-total">
-                    <strong class="cart-total-title">Total</strong>
-                    <span class="cart-total-price">$0</span>
-                </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
-
-        <br />
-
+        <br><br><br><br><br><br><br><br>
         <!-- Footer -->
         <footer class="page-footer font-small blue" style="background-color: rgb(96, 114, 62)">
             <div class="footer-copyright text-center py-3">© 2018 Copyright:
