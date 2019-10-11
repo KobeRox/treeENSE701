@@ -86,7 +86,7 @@ function addItemToCart(title, price) {
                             Price: <span class="cart-price cart-column">${price}</span>
                             <div class="cart-quantity cart-column">
                                 <input class="cart-quantity-input" type="number" value="1" style="width: 50px;">
-                                <button class="btn btn-dark" type="button">REMOVE</button>
+                                <button class="btn btn-dark" type="button" onclick=" event.stopPropagation();">REMOVE</button>
                             </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
