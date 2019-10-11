@@ -72,12 +72,12 @@
                                                     <span class="cart-total-price">$0</span>
                                                 </div>
                                                 <br>
-                                            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> <br><br>
+                                            <button class="btn btn-primary btn-purchase" type="button" onclick=" event.stopPropagation();">PURCHASE</button> <br><br>
                                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                <label class="btn btn-secondary active">
-                                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Delivery
+                                                <label class="btn btn-secondary active" onclick=" event.stopPropagation();">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off"> Delivery
                                                 </label>
-                                                <label class="btn btn-secondary">
+                                                <label class="btn btn-secondary" onclick=" event.stopPropagation();">
                                                     <input type="radio" name="options" id="option2" autocomplete="off"> Pick Up
                                                 </label> 
                                             </div>
@@ -291,6 +291,7 @@
         <footer class="page-footer font-small blue" style="background-color: rgb(96, 114, 62)">
             <div class="footer-copyright text-center py-3">© 2018 Copyright:
                 <a href="" class="text-light"> PlantATree</a>
+                <img src="images/ico.png" alt="" style="width: 20px; height: 20px;">
             </div>
         </footer>
     </body>

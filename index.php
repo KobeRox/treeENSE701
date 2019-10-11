@@ -106,8 +106,9 @@
 
     <!-- Footer -->
     <footer class="page-footer font-small blue" style="background-color: rgb(96, 114, 62)">
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
           <a href="" class="text-light"> PlantATree</a>
+          <img src="images/ico.png" alt="" style="width: 20px; height: 20px;">
         </div>      
     </footer>
 </html>
