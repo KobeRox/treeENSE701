@@ -62,15 +62,14 @@ function addToCartClicked(event) {
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
 
-    addItemToCart(title, price, imageSrc)
+    addItemToCart(title, price)
     updateCartTotal()
 }
 
 
 // updates the values inside the cart
-function addItemToCart(title, price, imageSrc) {
+function addItemToCart(title, price) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -81,23 +80,14 @@ function addItemToCart(title, price, imageSrc) {
             return
         }
     }
-    var cartRowContents = `
-            <div class="cart-item cart-column">
-            </div>
-            <div class="row">
-                <div class="col">
-                    <span class="cart-item-title">${title}</span>
-                </div>
-                <div class="col">
-                    <span class="cart-price cart-column">${price}</span>
-                </div>
-                <div class="col">
-                    <div class="cart-quantity cart-column">
-                        <input type="number" class="cart-quantity-input" style="width: 50px;" value="1">
-                        <button class="btn btn-dark" style="width: 100px;"> REMOVE </button>
-                </div>
-            </div>
-        </div>`
+    var cartRowContents = `<div class="cart-item cart-column">
+                                <span class="cart-item-title"><h6> ${title} </h6></span>
+                            </div>
+                            Price: <span class="cart-price cart-column">${price}</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1" style="width: 50px;">
+                                <button class="btn btn-dark" type="button">REMOVE</button>
+                            </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-dark')[0].addEventListener('click', removeCartItem)
