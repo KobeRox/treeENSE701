@@ -76,13 +76,8 @@
           </div>  
         </div>
         <br/>
-
-
-        <br><br><br><br><br><br>
-        <h1 align="center"> Team members</h1>
-        <br><br>
-        <div >
-            <p align="center">
+        <div>
+            <p>
             Ryan Bosher: tsc4048@autuni.ac.nz <br>	 
             John Geronimo: Vks2282@autuni.ac.nz	<br>
             Thomas Isaac Donald Tayler: fhp1528@autuni.ac.nz<br>	  
