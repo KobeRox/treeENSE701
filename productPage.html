@@ -50,34 +50,123 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="cart.html">Shopping Cart</a>
+                            <div class="btn-group dropleft">
+                                    <!-- Shopping Cart -->
+                                <div class="d-flex justify-content-around">
+                                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown"> Shopping Cart<span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <section class="container content-section">
+                                                    <h2 class="section-header">CART</h2>
+                                                    <div class="cart-row">
+                                                        <div class="row">
+                                                            <div class="col-6 col-md-4">
+                                                                    <span class="cart-item cart-header cart-column"><h5> ITEM</h5></span>
+                                                            </div>
+                                                        </div>                                
+                                                    </div>
+                                                <div class="cart-items">   
+                                                </div>
+                                                <div class="cart-total">
+                                                    <strong class="cart-total-title">Total</strong>
+                                                    <span class="cart-total-price">$0</span>
+                                                </div>
+                                                <br>
+                                            <button class="btn btn-primary btn-purchase" type="button" onclick=" event.stopPropagation();">PURCHASE</button> <br><br>
+                                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                <label class="btn btn-secondary active" onclick=" event.stopPropagation();">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off"> Delivery
+                                                </label>
+                                                <label class="btn btn-secondary" onclick=" event.stopPropagation();">
+                                                    <input type="radio" name="options" id="option2" autocomplete="off"> Pick Up
+                                                </label> 
+                                            </div>
+                                            <br> <br>
+                                            $10 for urban addresses covering a count of 1-10 products. <br>
+                                            $17 for rural addresses covering a count of 1-10 products.  <br>
+                                            $22 for all addresses outside Auckland covering a count of 1-10 products. <br>
+                                            Shipping will be free nationwide for any purchase of more than 10 products as long as they are being shipped to the same address.
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>                       
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Products -->
+        <br>
         <div class="container">
 
-            <h3 class="h3">Tree Product Demo </h3>
+            <h3 class="h3">PlantATree Products </h3>
 
             <form>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="pics_in_a_row">
-                            <div class="img1">
-                                <img src="images/grapefruit.jpg" alt="">
-                                <p class="text-center">Grapefruit ($29.99)</p>
-
-                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
-                                    Tree Info
-                                </button>
-                                <button type="button" class="btn btn-secondary">
-                                    Add to cart
-                                </button>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img src="images/Turkish Fir.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Turkish Tree</span>
+                                <span class="shop-item-price">$29.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
 
                                 <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                    <div class="modal fade" id="TurkishFir" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Turkish Fir</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                    Tall timber, shelter or specimen tree. Great Christmas tree, needles sticking upwards revealing the silvery undersides of scented needles. It performs best in full sun and does not like heavy soil conditions. Evergreen. Hardy.
+                                                    <br><br> Growth Rate: Slow <br>
+                                                    Height after 5 years: 2 m <br>
+                                                    Height when mature: 15 m <br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"><a href="treeDetails.html" class="text-light"> More tree details </a></button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Product -->
+                    <div class="col-md-3">
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img src="images/Autumn Blaze.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Autmun Blaze</span>
+                                <span class="shop-item-price">$22.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                                <!-- Modal -->
+                                    <div class="modal fade" id="autmumnModal" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
@@ -88,7 +177,10 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                In order to properly grow grapefruit, you need to provide relatively warm conditions both day and night.
+                                                    Syn. Acer 'Jeffers Red'. A medium-sized tree with a dense crown, ideal as a specimen tree or for amenity planting such as avenues etc. The fresh green leaves change to vibrant shades of red, orange and scarlet over autumn. Wind-tolerant. Makes a stunning shelter belt. Deciduous. Hardy.
+                                                    <br><br> Growth Rate: Medium <br>
+                                                    Height after 5 years: 4 m <br>
+                                                    Height when mature: 10 m <br>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"><a href="treeDetails.html" class="text-light"> More tree details </a></button>
@@ -101,64 +193,105 @@
                         </div>
                     </div>
 
+                    <!-- New Product -->
                     <div class="col-md-3">
                         <div class="pics_in_a_row">
                             <div class="img1">
-                                <a href="cart.html">
-                                    <img src="images/feijoa.jpg" alt="">
+                                <img src="images/Acacia Pravissima.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Acacia Pravissima</span>
+                                <span class="shop-item-price">$19.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
 
-                                    <p class="text-center">Feijoa ($22.99)</p>
-                                </a>
+                                <!-- Modal -->
+                                    <div class="modal fade" id="Acacia" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Acacia Pravissima</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Unusual triangular leaves, profuse golden-yellow flowers in September on a small, spreading tree or large shrub. Fast-growing shelter on dry sites. Tolerates coastal sites. Evergreen. Good frost tolerance.
+                                                <br><br>Growth Rate: Rapid 
+                                                Height after 5 years: 4 m <br>
+                                                Height when mature: 4 m <br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"><a href="treeDetails.html" class="text-light"> More tree details </a></button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+
+                     <!-- New Product -->
+                     <div class="col-md-3">
                         <div class="pics_in_a_row">
                             <div class="img1">
-                                <a href="cart.html">
-                                    <img src="images/olive.jpg" alt="">
+                                <img src="images/Abies Vejari.jpg" alt="" class="shop-item-image">
+                                <span class="shop-item-title">Abies Vejari</span>
+                                <span class="shop-item-price">$15.99</span>
+                                <div class="shop-item-details">
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#TurkishFir">
+                                        Tree Info
+                                    </button>
+                                    <button type="button" class="btn btn-secondary shop-item-button">
+                                        Add to cart
+                                    </button>
+                                </div>
 
-                                    <p class="text-center">Olive Tree($19.99)</p>
-                                </a>
+                                <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Abies Vejari</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                An evergreen fir with an upright habit. These dramatic conical shaped conifers make a great statement in the landscape, long-lived and withstanding the elements. Very useful timber tree. Noted as one of the fastest-growing firs in New Zealand. Cold hardy.
+                                                <br><br>
+                                                    <p>
+                                                        Growth Rate: Slow <br>
+                                                        Height after 5 years: 2 m <br>
+                                                        Height when mature: 15 m <br>
+                                                    </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"><a href="treeDetails.html" class="text-light"> More tree details </a></button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-        <section class="container content-section">
-                <h2 class="section-header">CART</h2>
-                <div class="cart-row">
-                    <span class="cart-item cart-header cart-column">ITEM</span>
-                    <span class="cart-price cart-header cart-column">PRICE</span>
-                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                </div>
-                <div class="cart-items">
-                    <div class="cart-row">
-                        <div class="cart-item cart-column">
-                            <img src="images/grapefruit.jpg" alt="" class="cart-item-image" width="100" height="100">
-                            <span class="cart-item-title">Grapefruit</span>
-                        </div>
-                        <span class="cart-price cart-column">$29.99</span>
-                        <div class="cart-quantity cart-column">
-                            <input type="number" class="cart-quantity-input" value="1">
-                            <button class="btn btn-dark"> REMOVE </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-total">
-                    <strong class="cart-total-title">Total</strong>
-                    <span class="cart-total-price">$0</span>
-                </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
-
-        <br />
-
+        <br><br><br><br><br><br>
         <!-- Footer -->
         <footer class="page-footer font-small blue" style="background-color: rgb(96, 114, 62)">
             <div class="footer-copyright text-center py-3">© 2018 Copyright:
                 <a href="" class="text-light"> PlantATree</a>
+                <img src="images/ico.png" alt="" style="width: 20px; height: 20px;">
             </div>
         </footer>
     </body>
